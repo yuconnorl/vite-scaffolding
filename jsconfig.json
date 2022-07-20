@@ -1,0 +1,13 @@
+// To let vscode know how to deal with your project and aliases
+// if the project is using typescript, then change filename into tsconfig
+{
+  "compilerOptions": {
+    "baseUrl": "./", // Use the . location as the project root (which is where file jsconfig.json) is.
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "paths": {
+      "@/*": ["src/*"], // aliases path setting
+    },
+  },
+  "exclude": ["node_modules", "dist"] // It means to exclude everything inside node_modules and dist folder. For instance, you don't want the compiled bundle to appear in search results when you are searching for symbols or variables.
+}
